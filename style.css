@@ -1,0 +1,118 @@
+@charset "UTF-8";
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+header{
+    background-color: white;
+    padding: 20px 0;
+    border-bottom: 1px solid rgb(200, 200, 200);
+}
+.center{
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 2%;
+    display: flex;
+    flex-wrap: wrap;
+}
+.logo{
+    color: black ;
+}
+.logo h2{
+    font-weight: normal;
+    font-size: 22px;
+}
+.menu{
+     width: 80%;
+     text-align: right;
+}
+.menu a{
+    color: black;
+    font-size: 14px;
+    text-decoration: none;
+    margin-right: 20px;
+    /*transition: 0.5s;*/
+}
+.menu a:hover{
+    color: blue;
+}
+.menu .btn-menu, .main_cta button{
+    background-color: blue;
+    padding: 8px 16px;
+    color: white;
+    border-radius: 5px;
+    border: 0;
+    font-size: 15px;
+    cursor: pointer;
+}
+.menu .btn-menu:hover{
+    background-color: rgb(6, 6, 100);
+    color: white;
+}
+section.main{
+    background-image: url('img/hero-bg.jpg');
+    padding: 70px 0;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+.main_cta{
+    width: 100%;
+    text-align: center;
+    margin: 60px 0;
+}
+.main_cta h2{
+    color: blue;
+    font-size: 40px;
+}
+.main_cta p{
+    color: gray;
+    font-size: 19px;
+    margin: 10px 0;
+}
+.diferenciais{
+    display: flex;
+    flex-wrap: wrap;
+}
+.diferencial-single{
+    background-color: white;
+    width: 23%;
+    margin-right: 2%;
+    padding: 50px 20px;
+}
+.diferencial-single i{
+    color: blue;
+    font-size: 23px;
+}
+.diferencial-single h2{
+    color: blue;
+    margin: 10px 0;
+    font-size: 14px;
+}
+.diferencial-single p{
+    color: gray;
+    font-size: 14px;
+    line-height: 30px;
+}
+section.sobre{
+    padding: 80px 0;
+}
+.chamada-sobre{
+    text-align: center;
+}
+.chamada-sobre h2{
+    color: blue;
+}
+.chamada-sobre p{
+    font-size: 14px;
+    color: gray;
+    margin: 10px 0 ;
+}
+@media screen and (max-whidth:768px){
+    .diferencial-single{width: 100% ;}
+    margin-bottom: 20px;
+}
