@@ -24,7 +24,12 @@
                 <a href="#" class="btn-menu"> Get Start</a>
             </div>
             <div class="menu-mobile">
-                <i class="fa-solid fa-bars"></i> 
+                <i class="fa-solid fa-bars menu-mobile-icon"></i> 
+                <div class="menu-itens">
+                    <a href="#">Home</a>
+                    <a href="#">Sobre</a>
+                    <a href="#">Contato</a>
+                </div>
             </div>
         </div>
     </header>
@@ -97,7 +102,13 @@
         </div>
     </section>
     <script src="https://kit.fontawesome.com/0e408c6b02.js" crossorigin="anonymous">
-
+    </script>
+    <script>
+        var el = document.querySelector('.menu-mobile-icon')
+        el.addEventListener('click', ()=> {
+            var menuItens = document.querySelector('.menu-itens')
+            menuItens.classList.add('show')
+        })
     </script>
 </body>
 </html>
