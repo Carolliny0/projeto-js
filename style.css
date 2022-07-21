@@ -145,6 +145,16 @@ section.conquistas{
 .conquista-single h2{
     font-size: 20px;
 }
+.conquista-single img{
+    max-width: 100%;
+    transform: scale(1,1);
+    filter: grayscale(100%);
+    transition: 1seg;
+}
+.conquista-single img:hover{
+    transform: scale(1.1,1.1);
+    filter: grayscale(0);
+}
 .menu-itens{
     position: absolute;
     left: 0;
@@ -167,6 +177,27 @@ section.conquistas{
     display: block;
     text-decoration: none;
     color: blue;
+}
+.sobre-empreendedor{
+    padding: 50px 0;
+}
+.sobre-empreendedor-img{
+    width: 50%;
+}
+.sobre-empreendedor-img img{max-width: 100%;}
+
+.sobre-empreendedor-content{
+    padding: 0 50px;
+    width: 50%;
+}
+.sobre-empreendedor-content h2{
+    color: blue;
+    margin-bottom: 20px;
+    margin-top: 35px;
+}
+.sobre-empreendedor-content p{
+    font-size: 14px;
+    margin-bottom: 14px;
 }
 @media screen and (max-width:768px){
     .diferencial-single{
