@@ -153,13 +153,15 @@ section.conquistas{
     text-align: center;
     background-color: white;
     border-bottom: 2px solid blue;
-    display: none;
+    display: block; /*block*/
+    opacity: 0;
+    transition: 1s;
 }
 .menu-itens.show{
-    display: block;
+    opacity: 1;
 }
 .menu-itens.hidde{
-    display: none;
+    opacity: 0;
 }
 .menu-itens a{
     display: block;

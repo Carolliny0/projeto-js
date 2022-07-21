@@ -101,14 +101,33 @@
             </div>
         </div>
     </section>
+    <section class="sobre-empreendedor">
+        <div class="centrer">
+            <img src="./img/cores.jpg" alt="[ERRO]">
+            <div class="sobre-empreendedor-content">
+                <h2> Lorem ipsum dolor sit amet </h2>
+                <p> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+                <p> Ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum </p>
+            </div>
+        </div>
+    </section>
+
+
     <script src="https://kit.fontawesome.com/0e408c6b02.js" crossorigin="anonymous">
     </script>
     <script>
         var el = document.querySelector('.menu-mobile-icon')
         el.addEventListener('click', ()=> {
             var menuItens = document.querySelector('.menu-itens')
-            menuItens.classList.add('show')
-        })
+            if(menuItens.classList.contains('show')){
+                menuItens.classList.add('hide')
+                menuItens.classList.remove('show')
+            }else{
+                menuItens.classList.add('show')
+                menuItens.classList.remove('hide')
+            }
+
+        }) 
     </script>
 </body>
 </html>
