@@ -23,18 +23,18 @@ header{
 }
 .logo h2{
     font-weight: normal;
-    font-size: 22px;
+    font-size: 25px;
 }
 .menu{
      width: 80%;
      text-align: right;
+     margin-top: 5px;
 }
 .menu a{
     color: black;
-    font-size: 14px;
+    font-size: 16px;
     text-decoration: none;
     margin-right: 20px;
-    /*transition: 0.5s;*/
 }
 .menu a:hover{
     color: blue;
@@ -50,13 +50,13 @@ header{
 }
 .menu .btn-menu:hover{
     background-color: rgb(6, 6, 100);
-    color: white;
+    color: rgb(255, 255, 255);
 }
 .menu-mobile{
     display: none;
 }
 section.main{
-    background-image: url('img/hero-bg.jpg');
+    background-image: url('img/pretoo.jpg');
     padding: 70px 0;
     background-position: center;
     background-size: cover;
@@ -69,7 +69,7 @@ section.main{
     margin: 60px 0;
 }
 .main_cta h2{
-    color: blue;
+    color: white;
     font-size: 40px;
 }
 .main_cta p{
@@ -134,16 +134,18 @@ section.sobre{
     margin-top: 10px;
 }
 section.conquistas{
-    background-color: rgb(227, 238, 234);
+    background-color: #141414;
     padding: 20px 0px;
 }
 .conquista-single{
     width: 22%;
     margin-right: 3%;
     text-align: center;
+    color: gray;
 }
 .conquista-single h2{
     font-size: 20px;
+    color: white;
 }
 .conquista-single img{
     max-width: 100%;
@@ -231,15 +233,16 @@ section.depoimentos .depoimentos-chamada{
 }
 .carrousel-single-box{
     padding: 10px;
-    background-color: rgb(198, 244, 255);
+    background-color: #141414;
     border-radius: 10px;
 }
 .carrousel-single-box p{
     font-style: italic;
     font-size: 16px;
+    color: gray;
 }
 .carrousel-single-box i{
-    color: rgb(187, 183, 179);
+    color: white;
     font-size: 19px;
     padding: 0 8px;
 }
@@ -269,4 +272,39 @@ section.depoimentos .depoimentos-chamada{
         width: 100%;
         margin: 20px 20px;
     }
+}
+
+
+.layout{
+    width: 600px;
+    margin: auto;
+}
+.accordion{
+    padding: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background: #141414;
+    color: white;
+    border-radius: 10px;
+    text-align: center;
+}
+.accordion__question p{
+    margin: 5px;
+
+}
+.accordion__answer p{
+    margin: 5px;
+    padding: 10px;
+    color: white;
+    background-color: gray;
+    border-radius: 10px; 
+}
+.accordion:hover{
+    cursor: pointer;
+}
+.accordion__answer {
+    display: none;
+} 
+.accordion.active .accordion__answer {
+    display: block;
 }
