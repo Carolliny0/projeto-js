@@ -39,7 +39,7 @@ header{
 .menu a:hover{
     color: blue;
 }
-.menu .btn-menu, .main_cta button{
+.menu .btn-menu, .main_cta a{
     background-color: blue;
     padding: 8px 16px;
     color: white;
@@ -47,6 +47,7 @@ header{
     border: 0;
     font-size: 15px;
     cursor: pointer;
+    text-decoration: none;
 }
 .menu .btn-menu:hover{
     background-color: rgb(6, 6, 100);
@@ -100,6 +101,12 @@ section.main{
     color: gray;
     font-size: 14px;
     line-height: 30px;
+}
+.diferencial-single:hover{
+    border: 0px solid rgba(153, 0, 0, 0.607);
+    transform: translate(-3px, -3px);
+    box-shadow: 5px 5px 10px rgba(0, 0, 255, 0.358);
+    transition: transform .5s;
 }
 section.sobre{
     padding: 80px 0;
@@ -204,16 +211,13 @@ section.conquistas{
 section.depoimentos{
     padding: 40px 0;
 }
-section.depoimentos .depoimentos-chamada{
-    text-align: center;
+.depoimentos-chamada{
+    text-align: justify;
 }
 .depoimentos-chamada h2{
     color: blue;
     text-transform: uppercase;
-}
-.depoimentos-chamada p{
-    margin: 10px 0;
-    font-size: 14px;
+    margin-bottom: 20px;
 }
 .carrousel{
     display: flex;
@@ -274,7 +278,15 @@ section.depoimentos .depoimentos-chamada{
     }
 }
 
-
+.duvidas{
+    padding-bottom: 50px;
+}
+.duv{
+    color: blue;
+    text-align: center;
+    text-transform: uppercase;
+    padding-top: 50px;
+}
 .layout{
     width: 600px;
     margin: auto;
@@ -307,4 +319,33 @@ section.depoimentos .depoimentos-chamada{
 } 
 .accordion.active .accordion__answer {
     display: block;
+}
+
+section.abc{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+}
+.carrossel{
+    overflow: hidden;
+    height: 500px;
+    width: 500px;
+}
+.container{
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
+}
+section.abc img{
+    object-fit: cover;
+    height: 500px;
+    width: 500px;
+}
+footer{
+    background-color: #141414;
+    color: white;
+    text-align: center;
+    padding: 10px 10px;
+    
 }

@@ -7,38 +7,37 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">    
-    <script src="https://kit.fontawesome.com/0e408c6b02.js" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
 <body>
     <header>
-        <div class="center">
+        <div class="center" id="menus">
             <div class="logo">
                 <h2>TesTando</h2>
             </div>
             <div class="menu">
-                <a href="#"> Home </a>
-                <a href="#"> Sobre </a>
-                <a href="#"> Contato </a>
-                <a href="#" class="btn-menu"> Get Start</a>
+                <a href="index.html#main_cta"> Home </a>
+                <a href="index.html#sobre"> Sobre </a>
+                <a href="index.html#duvidas"> Dúvidas </a>
+                <a href="index.html#sobre" class="btn-menu"> Get Started </a>
             </div>
             <div class="menu-mobile">
                 <i class="fa-solid fa-bars menu-mobile-icon"></i> 
                 <div class="menu-itens">
-                    <a href="#">Home</a>
-                    <a href="#">Sobre</a>
-                    <a href="#">Contato</a>
+                    <a href="index.html#main_cta">Home</a>
+                    <a href="index.html#sobre">Sobre</a>
+                    <a href="index.html#duvidas">Dúvidas</a>
                 </div>
             </div>
         </div>
     </header>
-    <section class="main">
+    <section class="main" id="main">
         <div class="center">
             <div class="main_cta">
                 <h2> One Page Sample </h2>
                 <p> We are team danki code </p>
-                <button> Get Startaed </button>
+                <a href="index.html#sobre"> Get Startaed </a>
             </div>
             <div class="diferenciais">
                 <div class="diferencial-single">
@@ -64,7 +63,7 @@
             </div>
         </div>
     </section>
-    <section class="sobre">
+    <section class="sobre" id="sobre">
         <div class="center">
             <div class="chamada-sobre">
                 <h2> About Us </h2>
@@ -131,7 +130,6 @@
         <div class="center">
             <div class="depoimentos-chamada">
                 <h2> Depoimentos </h2>
-                <p>Magnam dolores commodi suscipit. Necessitatibus eius consequatur ex aliquid fuga eum quidem. Sit sint consectetur velit. Quisquam quos quisquam cupiditate. Et nemo qui impedit suscipit alias ea. Quia fugiat sit in iste officiis commodi quidem hic quas.</p>
             </div>
             <div class="carrousel">
                 <div class="carrousel-single">
@@ -158,7 +156,10 @@
             </div>
         </div>    
     </section> 
-    <section>
+    <section class="duvidas" id="duvidas">
+        <div class="duv">
+            <h2> Dúvidas </h2>
+        </div>
         <div class="layout">
             <div class="accordion">
                 <div class="accordion__question">
@@ -186,32 +187,24 @@
             </div>
         </div>    
     </section>
-   
-<script src="https://kit.fontawesome.com/0e408c6b02.js" crossorigin="anonymous"> </script>
-<script>
-    var el = document.querySelector('.menu-mobile-icon');
-    el.addEventListener('click', ()=> {
-    var menuItens = document.querySelector('.menu-itens')
-       if (menuItens.classList.contains('show')) {
-         menuItens.classList.add('hide')
-         menuItens.classList.remove('show')
-       } else{ 
-         menuItens.classList.add('show')
-         menuItens.classList.remove('hide')
-       }
-     })
+    <section class="abc">
+            <div class="carrossel">
+                <div class="container" id="img">
+                    <img src="./img/cores.jpg" alt="">
+                    <img src="./img/preto.webp" alt="">
+                    <img src="./img/pretoo.jpg" alt="">
+                    <img src="./img/pretooo.jpg" alt="">
+                </div>
+            </div>
+    </section>
+    <footer>
+        <div> &copy; Copyright OnePage. All Rights Reserved </div>
+    </footer>
+    
+    <script src="https://kit.fontawesome.com/0e408c6b02.js" crossorigin="anonymous"> </script>
+    <script src="./js/script.js"></script>
 
-     var answers=document.querySelectorAll(".accordion");
-        answers.forEach((event)=>{
-            event.addEventListener('click',()=>{
-                if(event.classList.contains("active")){
-                    event.classList.remove("active");
-                }
-                else{
-                    event.classList.add("active");
-                }
-            })
-        })
-</script>
-</body>
+    
+  </body>
+
 </html>
