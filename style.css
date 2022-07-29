@@ -25,6 +25,14 @@ header{
     font-weight: normal;
     font-size: 25px;
 }
+#menus{
+        position: fixed;
+        right: 0;
+        top: 5%;
+        width: 100vw;
+        margin-top: -2.5em;
+        background-color: white;
+}
 .menu{
      width: 80%;
      text-align: right;
@@ -277,7 +285,6 @@ section.depoimentos{
         margin: 20px 20px;
     }
 }
-
 .duvidas{
     padding-bottom: 50px;
 }
